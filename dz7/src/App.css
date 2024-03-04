@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.checkbox-style {
+    margin-right: 5px;
+}
+
+.new-todo-style {
+    margin-bottom: 10px;
+}
+
+.input-style {
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 14px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-style {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #0088cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.list-style {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item-style {
+    margin-bottom: 5px;
+}
+
+.footer-style {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.task-container-style {
+    display: flex;
+    align-items: center;
+}
+
+.options-container {
+    position: relative;
+    margin-left: auto;
+}
+
+.options-dots {
+    cursor: pointer;
+}
+
+.options-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1;
+}
+
+.options-container:hover .options-dropdown {
+    display: block;
+}
+
+
+.options-dropdown button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.options-dropdown button:hover {
+    background-color: #f4f4f4;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-buttons button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.modal-buttons button.confirm {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+.modal-buttons button.cancel {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.modal-buttons button.confirm:hover,
+.modal-buttons button.cancel:hover {
+    background-color: #4cae4c;
+}
+
