@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0 auto;
+  gap: 5px;
+}
+h1 {
+  text-align: center;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #c79f63;
+}
+
+button {
+  padding: 6px;
+  color: white;
+  background-color: #0a1f1f;
+  border: none;
+  border-radius: 5px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+input {
+  padding: 20px;
+  border-radius: 10px;
+}
+input::placeholder {
+  color: darkred;
+}
+.paragraph {
+  display: flex;
+  font-family: "Grantha Sangam MN";
+}
